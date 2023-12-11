@@ -1,0 +1,29 @@
+{
+  "name": "vitepress-blog",
+  "version": "1.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs --port 8888",
+    "deploy": "deploy.sh",
+    "release": "standard-version && git push --follow-tags"
+  },
+  "devDependencies": {
+    "naive-ui": "^2.35.0",
+    "vitepress": "^1.0.0-rc.31",
+    "vue": "^3.2.37"
+  },
+  "dependencies": {
+    "commitizen": "^4.3.0",
+    "cz-customizable": "^7.0.0",
+    "sass": "^1.69.5",
+    "standard-version": "^9.5.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  }
+}
